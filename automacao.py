@@ -3,7 +3,7 @@
 
 import pyautogui
 import time
-pyautogui.PAUSE = 2
+pyautogui.PAUSE = 1
 
 link = "https://dlp.hashtagtreinamentos.com/python/intensivao/login"
 
@@ -34,7 +34,7 @@ time.sleep(4)
 # pip install pandas openpyxl
 import pandas
 
-tabela = pandas.read_csv(r"C:\Users\Gorfetika\Desktop\Projeto automação\produtos.csv")
+tabela = pandas.read_csv("produtos.csv")
 for linha in tabela.index:
     # Passo 4: Cadastrar os produtos
     pyautogui.click(x=831, y=323)
